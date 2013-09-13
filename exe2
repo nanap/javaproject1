@@ -1,0 +1,10 @@
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		String Name = "Nana";
+		Int Age= 26;
+		double height = 1.90 ;
+
+		System.out.println("So you are called + Name + and you are + height + meters tall. It's a pleasure meeting you.");
+	}
+}

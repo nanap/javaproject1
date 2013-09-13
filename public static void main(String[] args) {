@@ -1,0 +1,33 @@
+public static void main(String[] args) {
+    System.out.println("The super insano calculator");
+    System.out.println("enter the corrosponding number:");
+    System.out.println("1. Add | 2. Subtract | 3. Divide | 4.Multiply");
+    String input = null;
+    //get user input for string
+
+    int a = 0, b = 0;
+    System.out.println("Enter the first number");
+    //get user input for a
+    System.out.println("Enter the second number");
+    //get user input for b
+
+    switch (Integer.parseInt(input.trim())){
+        case 1: System.out.println(a + " plus " + b + " equals " + add(a, b));          break;
+        case 2: System.out.println(a + " minus " + b + " equals " + subtract(a, b));    break;
+        case 3: System.out.println(a + " divided by " + b + " equals " + divide(a, b)); break;
+        case 4: System.out.println(a + " times " + b + " equals " + multiply(a, b));    break;
+        default: System.out.println("your input is invalid!");                          break;
+    }
+}
+public static int add(int first, int second) {
+        return first + second;
+}
+public static int subtract(int first, int second) {
+        return first - second;
+}
+public static int divide(int first, int second) {
+        return first / second;
+}
+public static int multiply(int first, int second) {
+        return first * second;
+}
